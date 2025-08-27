@@ -1,7 +1,16 @@
-New Repository for the Qlik Cloud inventory App
+Qlik Cloud inventory App
 
 Intro
+  This app will provide information about your tenant
 
-
-
-Installation 
+  - License
+  - Applications
+  - Users
+  - Applications
+  - Spaces
+  - Reloads
+  - Tennat Configuration
+      - CSP
+      - OATH
+      - IDP
+      - License Allocation and Current Usage
