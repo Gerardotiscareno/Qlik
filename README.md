@@ -12,6 +12,8 @@ Installation
 Optional 
 
 Install the Perfect pixel report
-1.- After the app is now loaded, open the reporting section
-2.- Go the Template section and import the report file
+
+1.- After the app is now loaded, open the reporting section.
+
+2.- Go the Template section and import the report file.
 
