@@ -1,4 +1,4 @@
-This is a repository that will contain Qlik Sense and Qlik Cloud utilities.
+This App will provide information of your current tenant ( Users, Apps, datafiles, spaces, etc)
 
 Installation
 
