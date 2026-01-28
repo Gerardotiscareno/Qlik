@@ -51,7 +51,9 @@ Create a REST connection
             Note: ':<Connection Name>' is the relative path which will check for a connection in the current space.
 	
 ## Reload Options
-The app can be reload as it is without any changes in the configuration, Also the app has several options, below are steps to setup and reload.		
+Schedule monthly data reloads for the application. This will enable you to monitor monthly usage trends.
+
+There are several configuration settings that need to be modify before loading the app, this neecs to be change before publishing the app in a managed space.
 
     Example: '<Space>:<Connection Name>'
             Note: ':<Connection Name>' is the relative path which will check for a connection in the current space.
