@@ -22,28 +22,27 @@ This App will provide information on your current tenant as follows:
 
 ## Installation
 
-Pre-requisites
-	Before installing this application, the monitor apps need to be installed, for more information please follow the next link:
-	https://community.qlik.com/t5/Official-Support-Articles/Qlik-Cloud-Monitoring-Apps-Workflow-Guide/ta-p/2134140
-	
 To install the Application please follow the next steps.
 
   - Download the QVF file.
   - Upload the app and publish the app in the same space where your monitor apps are, this app used the same data source that the Monitor apps. (monitoring_apps_REST)
 
-Optional
-   In case this needs to be tested, you can copy the app in a personal o shared space and follow the next steps:	
-
-   - Create a REST Connection, and follow the next details
-
+Create a REST connection
+  
    Example Connection: 
    
    	URL: 		  https://<tenant-name>.<region>.qlikcloud.com/api/v1/items
    	Header: 	  "Authorization"
    	Header Value: "Bearer <token>"
    
-   For reference on how to connect: 
+   For reference on how to create a api key go here: 
 	         https://qlik.dev/tutorials/generate-your-first-api-key
+
+	Edit the connection   
+		- Check the Allow “WITH CONNECTION” 
+		- In the Pagination Section 
+			Pagination Type: NEXT URL 
+			Next URL PATH: links/next/href 
 
    - Name the Connection in the Data load editor
         In the **Configuration** Section, replace the variable vRestPaginationConnector , below is an example
