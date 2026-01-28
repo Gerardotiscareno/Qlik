@@ -53,15 +53,25 @@ Create a REST connection
 ## Reload Options
 The app can be reload as it is without any changes in the configuration, Also the app has several options, below are steps to setup and reload.		
 
- - The app can be configure to load in three diferent modes.
-     -  Complete 		In this mode is select by default and will load all data in the Application.
-     -  Configuration In this case only the configuration of the tenant will be loaded.
-     -  Test			Finally in this option, will only load user and space data, can be use to test this Application.
- -   To select any of those options, the user must have reload priviedleges.
- -   Open the Application and select the About sheet.
- -   In the Load Mode Drop Down, select one of the three options and click, the Reload Button.
- -   If the appplication is Schedule to load, by default will be complete mode.
+    Example: '<Space>:<Connection Name>'
+            Note: ':<Connection Name>' is the relative path which will check for a connection in the current space.
+			vRestPaginationConnector is the name of the REST Connection, sintaxsis '<Space>:<Connection Name>' 
 
+    vu_tenant_fqdn is the customer Tenant URL 
+    	Example: let vu_tenant_fqdn = 'm8v7xge20rzvaph.us.qlikcloud.com'; 
+	
+	VloadMode this is the load mode, there are 3 modes ( 'Complete','Configuration','Test' )  Complete will load all items, in Configuration  
+    only the tenant setting will be loaded, and finally there is a Test mode just validated that theda is being laoded 
+    	Example: let VloadMode 	= 'Complete'; 
+    			 let VloadMode 	= 'Configuration'; 
+            	 let VloadMode 	= 'Test'; 
+			 
+	vInternal this value will hide or show sensitive data (emails, user name, app name's, etc) 1 is to Hide and 0 to show all valies. 
+	    Example: let vInternal =  1; 
+	
+	VCustomerName This value is to have a value in the on-demand Report 
+    Example: let VCustomerName	= 'Qlik International'; 
+			
 ## Install the Perfect pixel report
 - After the app is now loaded, open the reporting section.
 - Go the Template section and import the report file. For more information please follow the next url https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/Reporting/cloud-in-app-reports-templates.htm
