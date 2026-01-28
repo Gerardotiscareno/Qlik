@@ -25,7 +25,7 @@ This App will provide information on your current tenant as follows:
 To install the Application please follow the next steps.
 
   - Download the QVF file.
-  - Upload the app and publish the app in the same space where your monitor apps are, this app used the same data source that the Monitor apps. (monitoring_apps_REST)
+  - Upload the app and publish the app in the same space where your monitor apps are
 
 Create a REST connection
   
